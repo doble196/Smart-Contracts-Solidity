@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.7;
+
 /*
 Joint Savings Account
 ---------------------
@@ -15,9 +18,6 @@ You will do the following:
 
 */
 
-
-
-pragma solidity ^0.5.0;
 
 // Define a new contract named `JointSavings`
 contract JointSavings {
@@ -44,32 +44,27 @@ contract JointSavings {
         /*
         Define a `require` statement that checks if the `recipient` is equal to either `accountOne` or `accountTwo`. The `require` statement returns the text `"You don't own this account!"` if it does not.
         */
-        require(recipient == accountOne, "You don’t own this account!");
-        require(recipient == accountTwo, "You don’t own this account!");
-        return recipient.transfer(amount);
-
+        require(!(recipient == accountOne || recipient == accountTwo), "You don't own this account!");
 
         /*
         Define a `require` statement that checks if the `balance` is sufficient to accomplish the withdraw operation. If there are insufficient funds, the text `Insufficient funds!` is returned.
         */
-        require(recipient == owner || recipient == authorizedRecipient, "The recipient address is not authorized!");
-        recipient.transfer(amount);
-        accountBalance = address(this).balance;
-
+        require(amount >= contractBalance, "Insufficient funds");
 
         /*
         Add and `if` statement to check if the `lastToWithdraw` is not equal to (`!=`) to `recipient` If `lastToWithdraw` is not equal, then set it to the current value of `recipient`.
         */
-            if (lastWithdrawAmount != recipient || bool false) public{
-
+        if (lastToWithdraw != recipient) {
+            lastToWithdraw = recipient;
+        }
         // Call the `transfer` function of the `recipient` and pass it the `amount` to transfer as an argument.
-                recipient.transfer(amount)
+        recipient.transfer(amount);
 
         // Set  `lastWithdrawAmount` equal to `amount`
-            lastWithdrawAmount == amount
+        lastWithdrawAmount == amount;
 
         // Call the `contractBalance` variable and set it equal to the balance of the contract by using `address(this).balance` to reflect the new balance of the contract.
-        contractBalance = address(this), balance;
+        contractBalance = address(this).balance;
     }
 
     // Define a `public payable` function named `deposit`.
@@ -94,4 +89,6 @@ contract JointSavings {
     /*
     Finally, add the **default fallback function** so that your contract can store Ether sent from outside the deposit function.
     */
-    function() external payable{}
+    fallback() external payable{}
+    receive() external payable{}
+}
