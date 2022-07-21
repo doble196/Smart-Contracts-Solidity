@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../Downloads/Class_1_Activities_20"
+		},
+		{
+			"path": "../../../../Downloads/Class_2_Activities_20"
+		},
+		{
+			"path": "../../../../Downloads/03_Create_a_Customer_Contract"
+		},
+		{
+			"path": "../../../../Downloads/04_Adding_Getters_and_Setters"
+		},
+		{
+			"path": "../../../../Downloads/05_Implement_Ether_Management_Functions"
+		},
+		{
+			"path": "../../../../Downloads/06_Trade_Controllers"
+		},
+		{
+			"path": "../../../../Downloads/07_Enforcing_Contract_Terms"
+		},
+		{
+			"path": "../../../../Downloads/08_Sending_Remittances_Using_Smart_Contracts"
+		}
+	],
+	"settings": {}
+}
