@@ -42,6 +42,34 @@
 				"type": "function"
 			},
 			{
+				"constant": true,
+				"inputs": [],
+				"name": "contractBalance",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "lastWithdrawAmount",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"constant": false,
 				"inputs": [],
 				"name": "deposit",
@@ -49,6 +77,25 @@
 				"payable": true,
 				"stateMutability": "payable",
 				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "lastToWithdraw",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "fallback"
 			}
 		],
 		"devdoc": {
@@ -72,9 +119,9 @@
 	},
 	"sources": {
 		"joint_savings.sol": {
-			"keccak256": "0x57e5be1c09a1b2963e5c268dad0365ebde40cae0c37d732d24e60ea68825183b",
+			"keccak256": "0xd4bae06a9fde0c93ae900658415793097a22b621fd05296b3657ebcd5a21d6a2",
 			"urls": [
-				"bzzr://755fa7c153bdb64c3c954a110358e2a0b7aa950713b13f2dfa126f7802e6573c"
+				"bzzr://5e947ffdffbb986f4c3d156453e24ae50160f548979f35fb0b75c6d6f9b9db54"
 			]
 		}
 	},
