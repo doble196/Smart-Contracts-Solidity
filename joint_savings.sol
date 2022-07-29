@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.7;
+pragma solidity ^0.5.0;
 
 /*
 Joint Savings Account
@@ -44,7 +44,7 @@ contract JointSavings {
         /*
         Define a `require` statement that checks if the `recipient` is equal to either `accountOne` or `accountTwo`. The `require` statement returns the text `"You don't own this account!"` if it does not.
         */
-        require(!(recipient == accountOne || recipient == accountTwo), "You don't own this account!");
+        require((recipient != accountOne || recipient != accountTwo), "You don't own this account!");
 
         /*
         Define a `require` statement that checks if the `balance` is sufficient to accomplish the withdraw operation. If there are insufficient funds, the text `Insufficient funds!` is returned.
@@ -82,13 +82,13 @@ contract JointSavings {
     function setAccounts(address payable account1, address payable account2) public{
 
         // Set the values of `accountOne` and `accountTwo` to `account1` and `account2` respectively.
-        account1 == accountOne;
-        account2 == accountTwo;
+        accountOne == account1;
+        accountTwo == account2;
     }
 
     /*
     Finally, add the **default fallback function** so that your contract can store Ether sent from outside the deposit function.
     */
-    fallback() external payable{}
-    receive() external payable{}
+    
+    function() external payable{}
 }
