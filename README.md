@@ -91,29 +91,34 @@ Once you’ve successfully deposited funds into your contract, test the contract
 
 
 
-### *First transaction running shows `Wage Calculation`:* 
+### *First Image shows `Contract Creation`:* 
 
-![WageCalculation](ImagesPNG/wage_calculation.png)  
+![setAccounts](ImagesPNG/wage_calculation.png)  
  
 
-### *Transaction hash mined creating `Validated Hash`:* 
+### *Transaction hash for `deposit`:* 
 
-![ValidatedHash](ImagesPNG/valideted_txn_hash.png) 
+![deposit](ImagesPNG/valideted_txn_hash.png) 
 
+![deposit](ImagesPNG/valideted_txn_hash.png) 
 
-### *Third link in chain `Transaction List`:* 
+![deposit](ImagesPNG/valideted_txn_hash.png) 
 
-![TransactionList](ImagesPNG/transactions.png)  
+### *Withdrawl fuctionality for `Withdrawals` fuction:* 
+
+![withdrawal](ImagesPNG/transactions.png)  
+
+![withdrawal](ImagesPNG/transactions.png) 
 
 
 ### *Customer sending payment `Transaction Hash` from Ganashe:* 
 
-![TransactionHash](ImagesPNG/transaction_hash.png)  
+![lastToWithdraw](ImagesPNG/transaction_hash.png)  
 
 
 ### *Successful transactions for `BlockchainWallets` from the `streamlit` app:* 
 
-![StreamlitApp](ImagesPNG/succesful.png)  
+![lastToWithdrawAmount](ImagesPNG/succesful.png)  
 
 
 ### *This is the `Ganashe Interface ` block transactions:* 
