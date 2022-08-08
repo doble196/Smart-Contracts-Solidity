@@ -93,48 +93,28 @@ Once you’ve successfully deposited funds into your contract, test the contract
 
 ### *First Image shows `Contract Creation`:* 
 
-![setAccounts](ImagesPNG/wage_calculation.png)  
+![setAccounts](ImagesPNG/ganasheCreation.png)  
  
-
-### *Transaction hash for `deposit`:* 
-
-![deposit](ImagesPNG/valideted_txn_hash.png) 
-
-![deposit](ImagesPNG/valideted_txn_hash.png) 
-
-![deposit](ImagesPNG/valideted_txn_hash.png) 
-
-### *Withdrawl fuctionality for `Withdrawals` fuction:* 
-
-![withdrawal](ImagesPNG/transactions.png)  
-
-![withdrawal](ImagesPNG/transactions.png) 
-
-
-### *Customer sending payment `Transaction Hash` from Ganashe:* 
-
-![lastToWithdraw](ImagesPNG/transaction_hash.png)  
-
-
-### *Successful transactions for `BlockchainWallets` from the `streamlit` app:* 
-
-![lastToWithdrawAmount](ImagesPNG/succesful.png)  
+![setAccounts](ImagesPNG/deployment.png)  
 
 
 ### *This is the `Ganashe Interface ` block transactions:* 
 
-![BlocksGanashe](ImagesPNG/blocks.png)  
+![BlocksGanashe](ImagesPNG/contractCreation.png)  
 
 
-* `Added 9 employees accounts` to the application.  
+### *Transaction hash for `deposit`:* 
 
-* `Added` the `extra slots` for `images`.  
+![deposit](ImagesPNG/deposit1.png) 
 
-* `Ganashe` was `optimized` with a `512bit mnemonic`.  
+![deposit](ImagesPNG/deposit2.png) 
 
-* `Ganashe test accounts` started with `1000 eth in wallet each`.  
+![deposit](ImagesPNG/ganasheTxns.png) 
 
-* `Application` is `optimized` to `serve more employees`.  
+
+### *Customer sending payment `Transaction Hash` from Ganashe:* 
+
+![lastToWithdraw](ImagesPNG/setAccounts.png)  
 
 
 ## Contributor
